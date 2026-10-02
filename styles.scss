@@ -1,0 +1,66 @@
+
+$color-base: brown;
+
+$alertas:(
+      info: lighten($color-base, 20%),
+    success: lighten($color-base, 10%),
+    warning: darken($color-base, 5%),
+    danger: darken($color-base, 20%),
+);
+
+@each $nivel, $color in $alertas {
+  .alerta-#{$nivel} {
+    background-color: $color;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+
+    @if $nivel == danger{
+        border: 15px solid darken($color, 20%);
+
+        animation: parpadeo 1s infinite;
+    }
+  }
+
+}
+
+
+@for $i from 1 through 3 {
+  .card-#{$i} {
+    background-color: lighten($color-base, $i * 10%);
+    color: black;
+    font-size: 14px + ($i * 4px);
+    box-shadow: 0 ($i * 4px) ($i * 8px) rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 250px;
+  }
+}
+
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+@function color-contraste($fondo){
+    @if lightness($fondo) > 50 {
+        @return black;
+    } @else {
+        @return white;
+    }
+}
+
+@for $i from 1 through 3 {
+  .card-#{$i} {
+    color: color-contraste(lighten($color-base, ($i * 5%)));
+  }
+}
+
+
+

@@ -1,0 +1,92 @@
+.alerta-info {
+  background-color: rgb(214.2173913043, 94.7826086957, 94.7826086957);
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.alerta-success {
+  background-color: rgb(203.8695652174, 54.1304347826, 54.1304347826);
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.alerta-warning {
+  background-color: rgb(144.6739130435, 36.8260869565, 36.8260869565);
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.alerta-danger {
+  background-color: rgb(83.6956521739, 21.3043478261, 21.3043478261);
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  border: 15px solid rgb(2.3913043478, 0.6086956522, 0.6086956522);
+  animation: parpadeo 1s infinite;
+}
+
+.card-1 {
+  background-color: rgb(203.8695652174, 54.1304347826, 54.1304347826);
+  color: black;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 9px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 250px;
+}
+
+.card-2 {
+  background-color: rgb(214.2173913043, 94.7826086957, 94.7826086957);
+  color: black;
+  font-size: 22px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 9px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 250px;
+}
+
+.card-3 {
+  background-color: rgb(224.5652173913, 135.4347826087, 135.4347826087);
+  color: black;
+  font-size: 26px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 9px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 250px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card-1 {
+  color: white;
+}
+
+.card-2 {
+  color: black;
+}
+
+.card-3 {
+  color: black;
+}/*# sourceMappingURL=styles.css.map */
